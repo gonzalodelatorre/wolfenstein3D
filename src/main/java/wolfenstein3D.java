@@ -94,7 +94,7 @@ public class wolfenstein3D {
                     }
                     // Right, D key
                     if (keyStroke.getCharacter().toString().toLowerCase().equals("d")) {
-                        playerA += (0.8f) /* elapsedTime*/;
+                        playerA += (0.8f);
                     }
                     // Foward, W keyww
                     if (keyStroke.getCharacter().toString().toLowerCase().equals("w")) {
@@ -117,8 +117,8 @@ public class wolfenstein3D {
 
                         if (map.charAt(Math.abs((int) playerY * mapWidth + (int) playerX)) == '#') {
                             System.out.println("CHAR");
-                            playerX += Math.sin(playerA) /* 5.0f * elapsedTime*/;
-                            playerY += Math.cos(playerA) /* 5.0f * elapsedTime*/;
+                            playerX += Math.sin(playerA);
+                            playerY += Math.cos(playerA);
                         }
                     }
 

@@ -103,7 +103,7 @@ public class wolfenstein3D {
                         playerY += Math.cos(playerA);
 
 
-                        if (map.charAt(Math.abs((int) playerY * mapWidth + (int) playerX)) == '#') { // TODO REVISAR, aca tire terrible corte.
+                        if (map.charAt(Math.abs((int) playerY * mapWidth + (int) playerX)) == '#') { 
                             playerX -= Math.sin(playerA);
                             playerY -= Math.cos(playerA);
                         }
